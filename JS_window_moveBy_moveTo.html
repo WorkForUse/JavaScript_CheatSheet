@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Window moveBy & moveTo</title>
+</head>
+<body>
+    <button onclick="openWindowFunc()">Open Window</button>
+    <button onclick="moveWindowFunc()">Move Window</button>
+
+
+
+    <script>
+        var myWindow;
+        function openWindowFunc(){
+            myWindow = window.open("","","width=400px,height=400px");
+            myWindow.document.write("<p>This is myWindow</p>");
+        }
+        function moveWindowFunc(){
+            // myWindow.moveTo(100,100);
+            myWindow.moveBy(100,100);
+            myWindow.focus();
+        }
+    </script>
+    <!-- moveby(johay wo relative postion pr work krtah hai)
+    moveTo(johay wo absolute position pr work krtah hai) -->
+</body>
+</html>

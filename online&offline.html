@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online & Offline Tutorial</title>
+    <style>
+        #box{
+            background-color: antiquewhite;
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body onoffline="offlineFunc()">
+    <div id="box"></div>
+
+    <script>
+        var target = document.querySelector("#box");
+
+        // window.addEventListener('offline',function(){
+        //     target.innerHTML = "Your Offline";
+        //     target.style.backgroundColor = "pink";
+        // });
+
+            function offlineFunc(){
+                target.innerHTML = "Your Offline";
+                target.style.backgroundColor = "pink";
+            }
+
+        window.addEventListener('online',function(){
+            target.innerHTML = "Your Online";
+            target.style.backgroundColor = "lightgreen";
+        });
+
+        // console.log(navigator.onLine);
+        if(navigator.onLine){
+            console.log("Online")
+        }else{
+            console.log("Offline")
+        }
+    </script>
+</body>
+</html>

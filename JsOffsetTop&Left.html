@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript offsetTop & offsetLeft</title>
+</head>
+<style>
+    #box{
+        background-color: pink;
+        width: 300px;
+        height: 300px;
+        margin: 0px 10px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div id="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste nisi rem cupiditate facilis est autem culpa accusamus voluptates dolor voluptatum, ipsa nam corporis eaque adipisci vel ex harum. Atque veritatis earum corrupti nihil exercitationem harum ratione suscipit dicta alias deserunt enim voluptate quo quaerat animi, dolorem quae dolor incidunt sapiente repudiandae quasi? Soluta, rem explicabo?
+    </div>
+
+    <script>
+        var box = document.querySelector("#box");
+        console.clear();
+        console.log("BOx offSetTop : " + box.offsetTop);
+        console.log("BOx offSetLeft : " + box.offsetLeft);
+    </script>
+</body>
+</html>

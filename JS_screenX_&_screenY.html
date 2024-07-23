@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript screenX & screenY | yeh mouse event properties hai</title>
+
+    <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript ScreenX & ScreenY</h2>
+
+    <div id="box"></div>
+    <script>
+        // document.querySelector('#box').addEventListener('mousemove',function(event){
+        document.querySelector('#box').addEventListener('click',function(event){
+            var x = event.screenX;
+            var y = event.screenY;
+            console.clear();
+            console.log("screenX : " + x);
+            console.log("screenX : " + y);
+        });
+        // document.addEventListener('mousemove',function(event){
+        //     var x = event.screenX;
+        //     var y = event.screenY;
+        //     console.clear();
+        //     console.log("screenX : " + x);
+        //     console.log("screenX : " + y);
+        // });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Window Open & Close Method</title>
+</head>
+<body>
+    
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">Close Window</button>
+
+
+    <script>
+        var myWindow;
+        function openWindow(){
+            myWindow = window.open("https://urlis.net/e75089df","","width=400px");
+        }
+        function closeWindow(){
+            myWindow.close();
+        }
+    </script>
+    <!-- windo.open(URL,name,specs(specification)) -->
+</body>
+</html>

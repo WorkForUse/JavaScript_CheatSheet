@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript CtrlKey AltKey ShiftKey MetaKey[Window Key]</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            background: pink;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <input type="text" id="mytextbox">
+    <script>
+        // yeh walay method say direct key answer return kregi
+
+        var target = document.querySelector('#mytextbox');
+
+        target.addEventListener("keydown",function(e){
+            console.clear();
+
+            var useKeyWithKeyboard;
+
+            switch(true){
+                case e.metaKey:
+                useKeyWithKeyboard = "Meta(Window) Key";
+                    break;
+                case e.altKey:
+                useKeyWithKeyboard = "Alt Key";
+                    break;
+                case e.ctrlKey:
+                useKeyWithKeyboard = "Control Key";
+                    break;
+                case e.shiftKey:
+                useKeyWithKeyboard = "Shift Key";
+                    break;
+                    default:
+                    useKeyWithKeyboard = "No Key Pressed";
+                        break;
+                    }
+                    console.log(useKeyWithKeyboard);
+                });
+
+                // yeah walay method say key ko hold krkay rkhna prega
+
+        var target = document.querySelector('#box');
+        target.addEventListener('click',function(e){
+            console.clear();
+
+            var k;
+
+            switch(true){
+                case e.metaKey:
+                    k = "Meta(Window) Key";
+                    break;
+                case e.altKey:
+                    k = "Alt Key";
+                    break;
+                case e.ctrlKey:
+                    k = "Control Key";
+                    break;
+                case e.shiftKey:
+                    k = "Shift Key";
+                    break;
+                    default:
+                        k = "No Key Pressed";
+                        break;
+            }
+
+            console.log(k);
+
+            // var ctrl = e.ctrlKey;
+            // // console.log(ctrl);
+            // if(ctrl){
+            //     console.log('You Pressed Control Key');
+            // }else{
+
+            //     console.log('You are not Pressed Control Key');
+            // }
+            // var shift = e.shiftKey;
+            // // console.log(ctrl);
+            // if(shift){
+            //     console.log('You Pressed Shift Key');
+            // }else{
+
+            //     console.log('You are not Pressed Shift Key');
+            // }
+            // var alt = e.altKey;
+            // // console.log(ctrl);
+            // if(alt){
+            //     console.log('You Pressed Alt Key');
+            // }else{
+
+            //     console.log('You are not Pressed Alt Key');
+            // }
+            // var metaKey_windowKey = e.metaKey;
+            // // console.log(ctrl);
+            // if(metaKey_windowKey){
+            //     console.log('You Pressed Window Key');
+            // }else{
+
+            //     console.log('You are not Pressed Meta Key');
+            // }
+        });
+    </script>
+</body>
+</html>

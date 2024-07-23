@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Location Object | URL BAR</title>
+</head>
+<body>
+    <h2>LOCATION OBJECTS</h2>
+
+    <button onclick="GothereFunc()">Click Here</button>
+
+    <script>
+        // console.log(location)
+        // console.log(location.host)
+        //console.log(location.hostname) // ismay sirf port nhi ata
+        // console.log(location.href) complete url return krtah hai
+        // console.log(location.port)
+        // console.log(location.hash) jahan #waali property hogi wo return krdayga
+        // console.log(location.search) // return ?page=dot / ? mark kay baad jo bhi value a rhi thi wo return krdi isnay
+
+        //  set location values methods
+
+        function GothereFunc(){
+            // return location.href= "https://www.kgcoding.in/t/u/activeCourses";
+            // return location.reload();
+            // return location.assign("https://www.kgcoding.in/t/u/activeCourses");
+            return location.replace("https://www.kgcoding.in/t/u/activeCourses");
+            // replace history say saaray page ura dayta hai fault iska matlab jitnay bhi agay page aye wahan nhi jasaktay
+        }
+
+        // location.href = "https://www.kgcoding.in/t/u/activeCourses";
+
+    </script>
+</body>
+</html>

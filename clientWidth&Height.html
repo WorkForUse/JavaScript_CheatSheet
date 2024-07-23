@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript clientWidth & clientHeight</title>
+</head>
+<style>
+    #box{
+        background-color: orangered;
+        height: 300px;
+        width: 300px;
+        border: 25px solid black;
+        padding: 50px;
+        margin: 100px;
+        overflow: auto;
+    }
+</style>
+<body>
+    <h2>Js client width and height</h2>
+
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quae tempore illum reprehenderit, dignissimos vitae, dolorum nam culpa aut magni doloremque, delectus distinctio eveniet praesentium facere. Delectus sit excepturi quae exercitationem iste ipsam soluta impedit. Minus qui est nemo libero sed similique nisi exercitationem autem earum, at dolore perferendis vitae corporis beatae. Enim sint laboriosam ipsa aliquam, assumenda voluptatem rerum? Facere obcaecati, distinctio exercitationem quasi aliquam consectetur expedita. Non ullam ea sint eligendi sunt. Labore soluta voluptatum adipisci quam distinctio libero, nisi atque perferendis. Sunt accusamus qui ullam ea ipsam blanditiis quod quae laborum tenetur, impedit earum eius commodi dicta provident rem sint est quasi aspernatur ex voluptatum repellendus eligendi corrupti repellat reiciendis. Hic expedita vel tempore consectetur. Possimus ut quis consectetur. Ad ex aspernatur vel quasi consectetur quas doloribus consequatur quidem omnis dolore dicta, hic doloremque, obcaecati neque distinctio asperiores totam, tempora amet modi veritatis! Odit ipsam aut autem qui assumenda eius, nobis vitae culpa, soluta quam hic similique saepe exercitationem, libero at illum provident? Iusto doloribus nisi similique nulla quo recusandae magni dignissimos libero sunt illo vel sint tempore consectetur ab ullam accusantium voluptate fugit harum quisquam voluptatum assumenda veritatis quos, rerum totam. Saepe dignissimos ducimus amet, deserunt quasi sapiente ut corrupti cum commodi aliquam animi, consequatur consectetur tempora! Harum odit culpa, vitae esse illo a eius aliquam maiores quos provident maxime? Aspernatur blanditiis aliquid omnis doloribus sint placeat quibusdam, perferendis totam quasi praesentium ipsa accusantium aperiam, aliquam at impedit! Fuga quas quaerat, ipsam maxime inventore qui natus? Quisquam veniam consectetur nesciunt aliquam nobis eligendi. Itaque, porro accusantium? Sequi aperiam suscipit eligendi repellendus. Voluptatum temporibus, corrupti dolores dicta culpa cupiditate, vel eligendi deserunt similique ut maiores. Assumenda nostrum vel, fuga itaque non autem impedit dicta et magnam labore similique voluptate mollitia molestiae ipsam vero, doloribus nemo sit? Itaque dolorum voluptatum ab odit rem nulla similique cupiditate, est, repellat voluptatibus praesentium atque in cum. Blanditiis tempore doloribus veniam dolor libero perspiciatis, a soluta consectetur, deserunt ipsam minima repellendus enim. Quasi, eaque. Vitae obcaecati, facilis error nihil distinctio ab consequuntur repudiandae qui minima, saepe illo quis id, tempora voluptas officia provident cum architecto expedita impedit alias a voluptatibus eveniet! Sequi nisi officiis ipsa tempora laborum autem iusto? Earum natus, ipsum possimus quos facere quisquam quam libero rem consequuntur nisi rerum ad. Laudantium eaque placeat nobis ut praesentium labore provident id assumenda facilis officiis temporibus aliquid cum tenetur, error dolorum recusandae!
+    </div>
+
+    <script>
+        var target = document.querySelector("#box");
+
+        var width = target.clientWidth;
+        var height = target.clientHeight;
+
+        console.log("clientWidth : " + width);
+        console.log("clientHeight : " + height);
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events Tutorial</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            background: pink;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box"></div>
+
+
+
+
+    <script>
+        // var target = document.querySelector("#box");
+        // target.addEventListener('mousedown',function(evenT){
+        //     console.clear();
+
+        //     var text = "You Pressed button : " + evenT.button;
+
+        //     console.log(text);
+
+        // });
+        var target = document.querySelector("#box");
+        target.addEventListener('mousedown',function(evenT){
+            console.clear();
+            
+            var text = evenT.button;
+
+            var color;
+
+            switch (text) {
+                case 0:
+                    color = "green";
+                    break;
+                case 1:
+                    color = "blue";
+                    break;
+                case 2:
+                    color = "red";
+                    break;
+                default:
+                    color = "pink";
+                    break;
+            }
+            target.style.backgroundColor = color;
+            // console.log(color);
+        });
+    </script>
+
+    <!-- agar aap left click krogay to aap ko yeah 0 return kregi | agar right to 2 | agar middle button wheel to 1 return kregi -->
+    <!-- event name onmousedown hai -->
+</body>
+</html>

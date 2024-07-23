@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oncut oncopy onpaste</title>
+    <style>
+        #myinput{
+            font-size: 21px;
+            padding: 15px;
+            width: 70%;
+        }
+        #box{
+            background-color: lightgoldenrodyellow;
+            width: 400px;
+            height: 250px;
+            padding: 15px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <h2>javascript Clipboard events</h2>
+    <input type="text" id="myinput">
+
+    <div id="box" oncopy="copyFunc()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cum ducimus consectetur accusantium asperiores debitis quisquam eveniet rerum. Nemo iure minus tempora ab. Error ut quibusdam nobis doloremque officiis eos iure facere iusto repudiandae temporibus pariatur ipsum sed id sequi optio quos odio voluptatibus voluptas delectus numquam, illum ex et ratione autem? Labore harum, dignissimos omnis nihil nostrum aliquid porro aliquam iusto hic tenetur illum expedita, sed repellendus animi ea?
+    </div>
+
+    <script>
+        const target = document.querySelector("#myinput");
+
+        target.addEventListener('copy',function(){
+            console.clear();
+            console.log("YOu Copied Text");
+            target.style.backgroundColor = "lightgreen";
+        });
+        target.addEventListener('cut',function(){
+            console.clear();
+            console.log("YOu Cut Text");
+            target.style.backgroundColor = "pink";
+        });
+        target.addEventListener('paste',function(){
+            console.clear();
+            console.log("YOu Pasted Text");
+            target.style.backgroundColor = "lightblue";
+        });
+
+        const target2 = document.getElementById("box");
+        // target2.addEventListener('copy',function(){
+        //     target2.style.backgroundColor = "lightgreen";
+        // });
+        function copyFunc(){
+            box.style.backgroundColor = "lightgreen";
+        };
+
+    </script>
+</body>
+</html>
